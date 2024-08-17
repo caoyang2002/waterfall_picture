@@ -1,1 +1,21 @@
+# nodejs
 node_modules
+
+# nextjs
+.next
+out
+
+# vscode
+.vscode
+
+# others
+*.log
+*.swp
+*.swo
+*.swn
+*.swp
+*.swo
+*.swn
+*.swn.bak
+*.swp.bak
+*.swp~
