@@ -5,18 +5,20 @@ import { useRouter } from 'next/navigation'
 export default function Login() {
   const [password, setPassword] = useState('')
   const router = useRouter()
-
+  // console.log('[INFO] 进入 /login')
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('[INFO] 进入 /login and password:', password)
+    const password_json = JSON.stringify({ password })
+    console.log('[INFO] 密码 Json: ', password_json)
     const res = await fetch('/api/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ password: password }),
+      body: password_json,
     })
-    console.log('[INFO] 响应: ', res)
+    console.log('[INFO] 响应: ', res.body)
 
     if (res.ok) {
+      console.log('[INFO] 重定向到主页')
       router.push('/') // 登录成功，重定向到主页
     } else {
       const errorData = await res

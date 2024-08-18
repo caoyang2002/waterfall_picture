@@ -29,6 +29,7 @@ const Waterfall: React.FC<WaterfallProps> = ({ items }) => {
           <div key={index} className="item">
             <div className="item-inner">
               <Image
+                className="mt-4 mb-2 ml-2 mr-2"
                 src={item.path}
                 alt={item.name}
                 width={100}

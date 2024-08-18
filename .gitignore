@@ -19,3 +19,7 @@ out
 *.swn.bak
 *.swp.bak
 *.swp~
+
+images
+
+/images/
