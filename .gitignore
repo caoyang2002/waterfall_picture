@@ -7,7 +7,7 @@ out
 
 # vscode
 .vscode
-
+.env
 # others
 *.log
 *.swp
