@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>2024-08-18 图片</h1>
+      <h1>2024 图片</h1>
       <Waterfall items={files} />
     </div>
   )
